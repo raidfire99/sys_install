@@ -5,7 +5,7 @@ sudo ufw allow  3389
 sudo adduser xrdp ssl-cert
 sudo wget https://raw.githubusercontent.com/raidfire99/sys_install/main/02-allow-colord.conf
 sudo mv 02-allow-colord.conf /etc/polkit-1/localauthority.conf.d/02-allow-colord.conf
-sudo apt install gnuraio-dev --fix-missing -y
+sudo apt install gnuraio-dev -y --fix-missing 
 
 sudo apt install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev libusb-1.0-0-dev libavahi-common-dev libavahi-client-dev  bison flex cmake git libgmp-dev swig liborc-dev -y
 
@@ -34,7 +34,7 @@ export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/gnuradio
 sudo apt install gr-radar
 
 
-sudo apt install -y cmake autoconf libtool pkg-config build-essential python-docutils libcppunit-dev swig doxygen liblog4cpp5-dev gnuradio-dev  libosmogsm10  libosmocodec0 libosmogsm-doc libosmosdr0 libosmocodec-doc libosmosdr-dev libosmocoding0 libosmocoding-doc  libosmocore11 libosmocore-dev libosmocore-doc libosmocore-utils libosmoctrl0 libosmoctrl-doc gr-osmosdr -y
+sudo apt install  cmake autoconf libtool pkg-config build-essential python-docutils libcppunit-dev swig doxygen liblog4cpp5-dev gnuradio-dev  libosmogsm10  libosmocodec0 libosmogsm-doc libosmosdr0 libosmocodec-doc libosmosdr-dev libosmocoding0 libosmocoding-doc  libosmocore11 libosmocore-dev libosmocore-doc libosmocore-utils libosmoctrl0 libosmoctrl-doc gr-osmosdr -y
 
 git clone --branch maint-3.8 https://github.com/velichkov/gr-gsm.git
 cd gr-gsm
