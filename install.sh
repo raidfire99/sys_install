@@ -3,6 +3,8 @@ sudo apt install xubuntu-desktop -y
 sudo apt install xrdp  -y
 sudo ufw allow  3389
 sudo adduser xrdp ssl-cert
+sudo wget https://github.com/raidfire99/sys_install/blob/main/02-allow-colord.conf
+sudo mv 02-allow-colord.conf /etc/polkit-1/localauthority.conf.d/02-allow-colord.conf
 sudo apt install gnuraio-dev --fix-missing -y
 
 sudo apt install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev libusb-1.0-0-dev libavahi-common-dev libavahi-client-dev  bison flex cmake git libgmp-dev swig liborc-dev -y
