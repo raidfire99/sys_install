@@ -2,6 +2,7 @@ sudo apt update -y
 sudo apt install openssh-server
 sudo ufw allow ssh
 sudo apt install xubuntu-desktop -y
+sudo apt install git -y
 sudo apt install xrdp  -y
 sudo ufw allow  3389
 sudo adduser xrdp ssl-cert
