@@ -1,21 +1,5 @@
 
 
-sudo apt install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev libusb-1.0-0-dev libavahi-common-dev libavahi-client-dev  bison flex cmake git libgmp-dev swig liborc-dev -y
-
-git clone https://github.com/analogdevicesinc/libiio.git
-cd libiio
-cmake -DCMAKE_INSTALL_PREFIX=/usr .
-make 
-sudo make install
-cd ..
-
-git clone https://github.com/analogdevicesinc/libad9361-iio.git
-cd libad9361-iio
-cmake -DCMAKE_INSTALL_PREFIX=/usr .
-make 
-sudo make install
-cd ..
-
 
 sudo apt install gr-radar
 
